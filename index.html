@@ -246,18 +246,33 @@
 
   <!-- Initialize Swiper -->
   <script>
-    var swiper = new Swiper(".mySwiper", {
-      spaceBetween: 100,
-      pagination: {
-        el: ".swiper-pagination",
-      },
-      breakpoints: {
-      768: { 
-        spaceBetween: 0, 
-      },
-    },
-    });
+    let swiper; // Declare Swiper variable
+  
+    function initSwiper() {
+      // Check if screen width is less than 768px
+      if (window.innerWidth < 768) {
+        if (!swiper) { // Initialize Swiper only if not already initialized
+          swiper = new Swiper(".mySwiper", {
+            spaceBetween: 100,
+            pagination: {
+              el: ".swiper-pagination",
+            },
+          });
+        }
+      } else {
+        // Destroy Swiper if it exists and screen is >= 768px
+        if (swiper) {
+          swiper.destroy(true, true); // Destroy Swiper instance and remove DOM modifications
+          swiper = null; // Reset the Swiper variable
+        }
+      }
+    }
+  
+    // Call initSwiper on page load and resize
+    window.addEventListener("load", initSwiper);
+    window.addEventListener("resize", initSwiper);
   </script>
+  
   <script>
     function updateSwiperClasses() {
       const section = document.querySelector('.mySwiper');
@@ -279,7 +294,7 @@
         if (swiperWrapper) {
           swiperWrapper.classList.add('swiper-wrapper');
         }
-        const swiperSlides = section.querySelectorAll('.coin-cards');
+        const swiperSlides = section.querySelectorAll('.swiper-wrapper  > div');
         swiperSlides.forEach(slide => {
           slide.classList.add('swiper-slide');
         });

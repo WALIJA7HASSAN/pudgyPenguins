@@ -247,9 +247,15 @@
   <!-- Initialize Swiper -->
   <script>
     var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 100,
       pagination: {
         el: ".swiper-pagination",
       },
+      breakpoints: {
+      768: { 
+        spaceBetween: 0, 
+      },
+    },
     });
   </script>
   <script>

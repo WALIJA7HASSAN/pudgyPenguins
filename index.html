@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Claim Your $PENGU | Pudgy Penguins</title>
+  <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+  <!-- css -->
+   <link rel="stylesheet" href="style.css">
+  <!-- tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  
+</head>
+<body class="bg-[url('./assets/fix-bg.svg')] bg-fixed bg-no-repeat bg-cover bg-center">
+  <div id="close-preloader" class="preloader md:hidden font-londrana backdrop-blur-sm bg-white/30 fixed inset-0 z-[100] grid items-center justify-center gap-4">
+    <div class="max-w-[338px] grid items-center justify-center gap-4">
+      <div>
+        <img src="./assets/penguLaptop.webp" class="block w-[100px] h-[100px] rounded-md mx-auto" alt="">
+      </div>
+      <h2 class="mx-auto uppercase text-[30px] text-[#00142d] md:text-[40px] md:max-w-full text-center leading-7 md:leading-[3rem]">
+        For the best claim experience we recommend you claim using your desktop
+      </h2>
+      <div class="close-btn hover-toggler card-btn rounded-[2rem]">
+        <button id="continue-mobile" class="bg-[#477bfd] w-full text-white text-[20px] uppercase py-[12px] md:py-[15px] px-[16px] rounded-[2rem] border-2 border-[#3B6A83]">
+          Continue on Mobile
+        </button>
+      </div>
+      <div class="hover-toggler ledger-btn rounded-[2rem]">
+        <button id="okay-btn" class="bg-[white] w-full text-[#00142D] text-[20px] uppercase py-[12px] md:py-[15px] px-[16px] rounded-[2rem] border-2 border-[#3B6A83]">
+          OKAY
+        </button>
+      </div>
+    </div>
+  </div>
+  
+
+  <main class=" bg-[#edf4ffaf]  ">
+    <section class="max-w-[550px] mx-auto pb-10 grid gap-[32px]">
+      <div class="py-[32px] px-[16px] flex items-center justify-center ">
+        <a class="hover-toggler" href="#"><img src="./assets/mainlogo.svg" class="max-w-[90px] lg:max-w-[108px]" alt=""></a>
+      </div>
+      <div class="font-londrana  grid gap-[12px] md:gap-[32px] items-center justify-center ">
+        <h2 class=" mx-auto uppercase text-[30px] text-[#00142d] md:text-[40px] max-w-[300px] md:max-w-full text-center leading-7 md:leading-[3rem]">connect a wallet <br class="md:hidden"> to <br class="hidden md:block"> check $pengu claim eligibility</h2>
+        <div class="flex flex-wrap gap-[4px] items-center justify-center md:justify-between md:bg-white max-w-[497px] p-[4px] rounded-3xl">
+          <div class="text-[12px] md:text-[15px] uppercase flex items-center bg-white p-[4px] rounded-3xl gap-2 w-fit text-[#00142d]">
+            <span class="bg-[#2b93f794] rounded-full w-[24px] h-[24px] flex items-center justify-center">1</span>
+            <p>Link wallets</p>
+          </div>
+          <div class="w-[24px] h-[24px]">
+            <img src="./assets/arrow.svg" alt="">
+          </div>
+          <div class="text-[12px] md:text-[15px]  uppercase flex items-center bg-white p-[4px] rounded-3xl gap-2 w-fit text-[#9DB4C1]">
+            <span class="bg-[#edf4ff] rounded-full w-[24px] h-[24px] flex items-center justify-center">2</span>
+            <p class="md:hidden">Step 2</p>
+            <p class="hidden md:block">connect claim wallet</p>
+          </div>
+          <div class="w-[24px] h-[24px]">
+            <img src="./assets/arrow.svg" alt="">
+          </div>
+          <div class="text-[12px] md:text-[15px]  uppercase flex items-center bg-white p-[4px] rounded-3xl gap-2 w-fit text-[#9DB4C1]">
+            <span class="bg-[#edf4ff] rounded-full w-[24px] h-[24px] flex items-center justify-center">3</span>
+            <p class="md:hidden">Step 3</p>
+            <p class="hidden md:block">claim $pengu</p>
+          </div>
+        </div>
+        
+        
+      </div>
+      <!-- top card -->
+      <div class="bg-white font-londrana  rounded-2xl p-[16px] text-center main-card1 grid gap-[1rem] m-2 md:m-0">
+        <div class="max-w-[246px] mx-auto border-white outline-none">
+          <video src="./assets/pengu-jump-white-opt.mp4" class="border-none outline-none bg-white w-full " autoplay muted loop></video>
+        </div>
+        <h3 class="uppercase text-black text-[24px] md:text-[32px] leading-8">you can link as many <br>
+          wallets as you’d like!</h3>
+          <p class="font-menco text-[#7E8895] text-[16px] max-w-[424px] mx-auto">You can connect your Solana and/or Ethereum wallet to check if you’re eligible for $PENGU.</p>
+        <div class="flex gap-4 items-center">
+         <div class="grow hover-toggler card-btn rounded-[2rem]">
+          <button class="bg-[#477bfd] w-full   text-white text-[20px] uppercase py-[12px] md:py-[15px] px-[16px] rounded-[2rem] border-2 border-[#3B6A83]">Link eth wallet</button>
+         </div>
+         <div class="grow hover-toggler card-btn rounded-[2rem]">
+          <button class="bg-[#477bfd] w-full   text-white text-[20px] uppercase py-[12px] md:py-[15px] px-[16px] rounded-[2rem] border-2 border-[#3B6A83]">Link sol wallet</button>
+         </div>
+        </div>
+        <div class="flex items-center justify-center gap-4">
+          <img src="./assets/check.svg" alt="">
+          <p class="font-menco">Connecting your wallet is secure</p>
+        </div>
+       </div>
+       <!-- ledger card -->
+       <div class="bg-white font-londrana  items-center rounded-2xl p-[16px] text-center main-card1 grid gap-[1rem] m-2 md:m-0">
+        <div class="max-w-[99px] mx-auto">
+          <img class="block w-full h-full" src="./assets/ledger.svg" alt="">
+        </div>
+        <p class="font-menco">Want to claim using your Solana Ledger?</p>
+        <div class=" hover-toggler ledger-btn rounded-[2rem]">
+          <button class="bg-[white] w-full   text-[#00142D] text-[20px] uppercase py-[12px] md:py-[15px] px-[16px] rounded-[2rem] border-2 border-[#3B6A83]">USE SOLANA LEDGER</button>
+         </div>
+       </div>
+    </section>
+    <section class="px-[38px] py-[30px] max-w-[1020px] mx-auto swiper mySwiper ">
+      <div class="swiper-wrapper   md:flex  md:flex-wrap lg:flex-nowrap  md:flex-row">
+        <div class="swiper-slide">
+          <article class="bg-white  w-full md:max-w-[358px] md:shrink-0  lg:shrink   rounded-xl coin-cards relative z-20 rotate-3">
+            <div class="p-[20px] pb-[32px] rounded-xl border-[#3B6A83] border-2 ">
+              <div class="">
+                <video src="./assets/ethSolana.mp4" class="w-full h-full rounded-xl" muted autoplay loop></video>
+              </div>
+              <h3 class="font-londrana text-[#00142d] text-[29px] uppercase">Connect Wallets</h3>
+              <p class="font-menco text-[#00142d] text-[17px]">Connect your ETH and/or SOL wallet to see if you’re eligible for $PENGU.</p>
+            </div>
+            <span class="text-[#3b6a83] text-[29px] font-londrana border-[#3B6A83] border-2 bg-[#EDF4FF] w-[51px] h-[51px] flex items-center justify-center rounded-full absolute top-[-22px] left-[-22px]">1</span>
+          </article>
+        </div>
+        <div class="swiper-slide">
+          <article class="bg-white   w-full md:max-w-[358px] md:shrink-0 lg:shrink   rounded-xl coin-cards relative z-50 -rotate-3 translate-y-3">
+            <div class="p-[20px] pb-[32px] rounded-xl border-[#3B6A83] border-2">
+              <div class="">
+                <video src="./assets/coin.mp4" class="w-full h-full rounded-xl" muted autoplay loop></video>
+              </div>
+              <h3 class="font-londrana text-[#00142d] text-[29px] uppercase">claim your $pengu</h3>
+              <p class="font-menco text-[#00142d] text-[17px]">See how much $PENGU you’re eligible for and get ready to claim.</p>
+            </div>
+            <span class="text-[#3b6a83] text-[29px] font-londrana border-[#3B6A83] border-2 bg-[#EDF4FF] w-[51px] h-[51px] flex items-center justify-center rounded-full absolute top-[-22px] left-[-22px]">1</span>
+          </article>
+        </div>
+        <div class="swiper-slide">
+          <article class="bg-white  w-full md:max-w-[358px] md:shrink-0 lg:shrink   rounded-xl coin-cards relative z-20 rotate-3">
+            <div class="p-[20px] pb-[32px] rounded-xl border-[#3B6A83] border-2">
+              <div class="">
+                <video src="./assets/blue.mp4" class="w-full h-full rounded-xl" muted autoplay loop></video>
+              </div>
+              <h3 class="font-londrana text-[#00142d] text-[29px] uppercase">send to sol wallet</h3>
+              <p class="font-menco text-[#00142d] text-[17px]">Receive your eligible $PENGU to a Solana wallet of your choice!</p>
+            </div>
+            <span class="text-[#3b6a83] text-[29px] font-londrana border-[#3B6A83] border-2 bg-[#EDF4FF] w-[51px] h-[51px] flex items-center justify-center rounded-full absolute top-[-22px] left-[-22px]">1</span>
+          </article>
+        </div>
+        
+      </div>
+      <div class="swiper-pagination "></div>
+    </section>
+    <footer class="p-[16px] max-w-[668px] mx-auto">
+      <div class="flex flex-wrap items-center justify-center gap-2 py-[32px]">
+        <a href="#">
+          <img src="./assets/twitter.svg" class="w-[42px] h-[42px] transition-all duration-75 ease-in hover:scale-110" alt="">
+        </a>
+        <a href="#">
+          <img src="./assets/instagram.svg" class="w-[42px] h-[42px] transition-all duration-75 ease-in hover:scale-110" alt="">
+        </a>
+        <a href="#">
+          <img src="./assets/tiktok.svg" class="w-[42px] h-[42px] transition-all duration-75 ease-in hover:scale-110" alt="">
+        </a>
+        <a href="#">
+          <img src="./assets/discord.svg" class="w-[42px] h-[42px] transition-all duration-75 ease-in hover:scale-110" alt="">
+        </a>
+        <a href="#">
+          <img src="./assets/share.svg" class="w-[42px] h-[42px] transition-all duration-75 ease-in hover:scale-110" alt="">
+        </a>
+      </div>
+      <div class="text-[#05365680] text-[14px] font-menco-light grid gap-4">
+        <p>This page is designed to facilitate members of the Pudgy Penguins community claiming $PENGU token; no representations are made that the bridge will work or that any particular amount of $PENGU token will be claimed by holders. $PENGU token is intended for fun and entertainment only and has no commercial value. The Pudgy Penguins companies own a significant amount of the $PENGU token.</p>
+        <div class="md:flex items-center justify-between">
+          <div class="font-menco flex flex-wrap items-center gap-4 order-2">
+            <a href="#" >Terms of Use</a>
+            <a href="#" >IP Rights</a>
+            <a href="#" >Privacy Policy</a>
+          </div>
+          <p class="order-1">Copyright © 2024 Pudgy Penguins, Inc. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </main>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const addHoverEffect = (element) => {
+        const applyDesktopEffect = () => {
+          element.addEventListener('mousemove', handleMouseMove);
+          element.addEventListener('mouseleave', resetTransform);
+          element.removeEventListener('mouseenter', applyBounceAnimation);
+          element.removeEventListener('mouseleave', resetBounceAnimation);
+        };
+  
+        const applyMobileEffect = () => {
+          element.addEventListener('mouseenter', applyBounceAnimation);
+          element.addEventListener('mouseleave', resetBounceAnimation);
+          element.removeEventListener('mousemove', handleMouseMove);
+          element.removeEventListener('mouseleave', resetTransform);
+        };
+  
+        const handleMouseMove = (e) => {
+          const rect = element.getBoundingClientRect();
+          const offsetX = ((e.clientX - rect.left) - rect.width / 2) / rect.width;
+          const offsetY = ((e.clientY - rect.top) - rect.height / 2) / rect.height;
+          const maxTranslation = 20;
+          const translateX = offsetX * maxTranslation;
+          const translateY = offsetY * maxTranslation;
+          element.style.transform = `translate(${translateX}px, ${translateY}px)`;
+        };
+  
+        const resetTransform = () => {
+          element.style.transform = 'translate(0, 0)';
+        };
+  
+        const applyBounceAnimation = () => {
+          element.style.animation = 'scaleDown 0.2s forwards';
+        };
+  
+        const resetBounceAnimation = () => {
+          element.style.animation = 'resetScale 0.2s forwards';
+        };
+  
+        const updateEffect = () => {
+          if (window.innerWidth > 768) {
+            applyDesktopEffect();
+          } else {
+            applyMobileEffect();
+          }
+        };
+  
+        // Initialize effect
+        updateEffect();
+  
+        // Reapply effect on resize
+        window.addEventListener('resize', updateEffect);
+      };
+  
+      // Apply the hover effect to all elements with the class 'hover-toggler'
+      const hoverTogglers = document.querySelectorAll('.hover-toggler');
+      hoverTogglers.forEach((toggler) => addHoverEffect(toggler));
+    });
+  </script>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      pagination: {
+        el: ".swiper-pagination",
+      },
+    });
+  </script>
+  <script>
+    function updateSwiperClasses() {
+      const section = document.querySelector('.mySwiper');
+      const screenWidth = window.innerWidth;
+  
+      if (screenWidth > 768) {
+        section.classList.remove('swiper', 'mySwiper');
+        const swiperWrapper = section.querySelector('.swiper-wrapper');
+        if (swiperWrapper) {
+          swiperWrapper.classList.remove('swiper-wrapper');
+        }
+        const swiperSlides = section.querySelectorAll('.swiper-slide');
+        swiperSlides.forEach(slide => {
+          slide.classList.remove('swiper-slide');
+        });
+      } else {
+        section.classList.add('swiper', 'mySwiper');
+        const swiperWrapper = section.querySelector('.md:flex');
+        if (swiperWrapper) {
+          swiperWrapper.classList.add('swiper-wrapper');
+        }
+        const swiperSlides = section.querySelectorAll('.coin-cards');
+        swiperSlides.forEach(slide => {
+          slide.classList.add('swiper-slide');
+        });
+      }
+    }
+  
+    // Call on load and resize
+    window.addEventListener('load', updateSwiperClasses);
+    window.addEventListener('resize', updateSwiperClasses);
+  </script>
+  
+  <script>
+    // Select the preloader and buttons
+    const preloader = document.getElementById('close-preloader');
+    const continueButton = document.getElementById('continue-mobile');
+    const okayButton = document.getElementById('okay-btn');
+  
+    // Function to hide the preloader
+    const hidePreloader = () => {
+      preloader.classList.add('hidden');
+    };
+  
+    // Attach event listeners to buttons
+    continueButton.addEventListener('click', hidePreloader);
+    okayButton.addEventListener('click', hidePreloader);
+  </script>
+  
+  
+  
+</body>
+</html>

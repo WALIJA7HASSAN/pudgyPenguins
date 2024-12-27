@@ -1,0 +1,89 @@
+.hover-toggler {
+  display: inline-block;
+  position: relative;
+  transition: transform 0.01s ease;
+}
+
+.hover-toggler img {
+  display: block;
+}
+
+
+@keyframes scaleDown {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes resetScale {
+  0% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@font-face {
+  font-family: 'Font1';
+  src: url('./fonts/286c0c7c193bbacc-s.p.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Font2';
+  src: url('./fonts/934ca5d86cb8ad40-s.p.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Font3';
+  src: url('./fonts/3818f1bd4832a6dd-s.p.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Font4';
+  src: url('./fonts/8393ee9793b05532-s.p.woff2') format('woff2');
+}
+
+.font-londrana{
+  font-family: 'Font2';
+}
+.font-menco{
+  font-family: 'Font4';
+}
+.font-menco-light{
+  font-family: 'Font1';
+}
+
+.main-card1{
+  box-shadow: 5px 5px 10px rgba(65, 62, 62, 0.201);
+}
+.card-btn,.ledger-btn{
+  box-shadow: 3px 3px  #C6CFD6;
+  transition: all .3s ease;
+}
+.card-btn button{
+  box-shadow: inset 0 -5px #3C6AD7;
+}
+.ledger-btn button{
+  box-shadow: inset 0 -5px #D9D9D9;
+}
+.coin-cards{
+  box-shadow: 3px 3px  #C6CFD6;
+  transition: all .3s ease;
+}
+.coin-cards > div{
+  box-shadow: inset -5px -5px #D9D9D9;
+}
+
+@media screen and (min-width:768px){
+  .card-btn:hover,.card-btn:hover button,.ledger-btn:hover,.ledger-btn:hover button{
+    box-shadow: none;
+  }
+
+}
